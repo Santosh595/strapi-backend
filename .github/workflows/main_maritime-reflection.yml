@@ -55,7 +55,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'strapi-on-azure'
+          app-name: 'maritime-reflection'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.<auto generated azure secret name> }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_127F08FBF4654A658513227E717FC157 }}
           package: .
