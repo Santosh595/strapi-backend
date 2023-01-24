@@ -15,7 +15,7 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "NODE_ENV=production node index.js",
     "build": "strapi build",
     "strapi": "strapi"
   },
