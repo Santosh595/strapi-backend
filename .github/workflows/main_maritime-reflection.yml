@@ -6,7 +6,7 @@ name: Build and deploy Strapi to Azure Web App - strapi-on-azure
 on:
   push:
     branches:
-      - master
+      - Main
   workflow_dispatch:
 
 jobs:
