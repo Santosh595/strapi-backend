@@ -20,10 +20,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.x'
+           
       - name: Delete Old Artifacts
         uses: actions/github-script@v6
         id: artifact
         with:
+         permissions: write-all
          script: |
           const res = await github.rest.actions.listArtifactsForRepo({
            owner: context.repo.owner,
