@@ -57,4 +57,4 @@ jobs:
         with:
           app-name: 'maritime-reflection'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_127F08FBF4654A658513227E717FC157 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_4c8060c165374481a8a0a707b9620f7d }}
